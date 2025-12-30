@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café de Angola</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="source/css/stilo.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <span class="logo">☕ Café de Angola</span>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre Nós</a>
+      <a href="#">Ajuda</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="source/imagens/Cafe-Grao-Moido-Robusta-Angola-Portela-Cafes-1024x1024.webp" alt="Café delicioso">
+    <div class="hero-content">
+      <h1>☕ CAFÉ DE ANGOLA</h1>
+      <p>Em Angola, a introdução do café remonta ao início do século XIX, durante o período colonial português.</p>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </div>
+  </section>
+
+  <h2 class="section-title">TIPOS DE CAFÉ</h2>
+  <section class="coffee-types">
+    <div class="type">
+      <img src="source/imagens/robusta.webp" alt="Café Expresso">
+      <h3>Coffea canephora - Robusta</h3>
+      <p>É o tipo predominante no país, cultivado principalmente nas regiões do Uíge, Cuanza Norte, Cuanza Sul, Bengo e Cabinda</p>
+    </div>
+    <div class="type">
+      <img src="source/imagens/cafe-arabica.jpg" alt="Café Latte">
+      <h3>Café Arábica (Coffea arabica)</h3>
+      <p>Cultivado em menor escala, representa apenas cerca de 5% da produção nacional. É encontrado em altitudes mais elevadas nas províncias de Benguela, Bié, Huambo, Huíla, Moxico e também no Cuanza Sul.</p>
+    </div>
+    
+  </section>
+
+  <section class="why-choose">
+    <h2 class="section-title">A CADEIA DE VALOR DO CAFÉ EM ANGOLA</h2>
+    <p>“A cadeia de valor do café em Angola compreende produtores, processadores, comerciantes, torrefadores e exportadores”, diz JC. “Aqui, nossos processadores possuem descascadores e são responsáveis pelo processamento do café; eles operam seus descascadores em regiões centrais de produção. ”</p>
+    <img src="source/imagens/CATA-CYGW89-1024x681.jpg" alt="Grãos de café de qualidade">
+  </section>
+
+  <section class="happy-mornings">
+    <h2 class="section-title">PRODUÇÃO DE CAFÉ EM ANGOLA PRECISA DE MAIS DE USD 150 MILHÕES</h2>
+    <p>A cadeia cafeícola e a cultura do cacau, caju e da palmeira de dendém necessitam de mais de 150 milhões de dólares norte-americanos, para se aumentar e resgatar os níveis de produção que caracterizaram Angola no período colonial.</p>
+  </section>
+
+  <section class="coffee-cups">
+    <img src="source/imagens/s4.jpg" alt="Copos de café variados">
+  </section>
+
+  <h2 class="section-title">Autores</h2>
+  <section class="authors">
+    <div class="author-card">
+      <img src="source/autores/ernesto.jpg" alt="Ernesto Grão">
+      <div class="author-info">
+        <h4>Ernesto Grão</h4>
+        <p>"Cada xícara é uma história."</p>
+      </div>
+    </div>
+
+    <div class="author-card">
+      <img src="source/autores/jacinto.jpg" alt="Jacinto Com Leite">
+      <div class="author-info">
+        <h4>Jacinto Com Leite</h4>
+        <p>"Feito com paixão e dedicação."</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Botão Chatbot -->
+    <div class="chatbot-button" onclick="toggleChat()">
+        <i class="fa fa-comments"></i>
+    </div>
+
+    <!-- Janela do Chatbot -->
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">Assistente Café <span onclick="toggleChat()">&times;</span></div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua pergunta..." onkeydown="handleEnter(event)">
+            <button onclick="sendMessage()"><i class="fa fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Café de Angola. Todos os direitos reservados.</p>
+          <p>Fundada por Ernesto Gmer</p>
+          <p>Para contato, use nosso WhatsApp 929452284.</p>
+          <p>Oferecemos conteudo relacionado ao café de Angola.</p>
+          <p>font: <a href="source/doc/cafe_de_angola.pdf"></a></p>
+        </div>
+      </footer>
+
+</body>
+</html>
